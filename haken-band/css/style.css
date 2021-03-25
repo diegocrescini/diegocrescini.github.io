@@ -12,7 +12,7 @@
     --black: #000;
     --white: #fff;
     --grey: #c5c5c5;
-    --darkGrey: #383838;
+    --darkGrey: #131313;
     --yellow: #f1c502;
     --darkYellow: #997d03;
     --brown: #2e1f00;
@@ -62,7 +62,7 @@ body {
 h1, h3, a, li, label, button {
     font-family: var(--titleFont);
 }
-h4, h2, p, input {
+h4, h2, p, input, textarea {
     font-family: var(--mainFont);
     line-height: 1.8;
 }
@@ -158,32 +158,38 @@ div.logo {
     color: var(--yellow);
     margin: .5rem 0;
     text-align: center;
-    letter-spacing: 1rem;    
+    letter-spacing: 1rem;
 }
+.album h4 {
+    text-align: center;
+}
+
 .album h2, .main h2 {
     font-family: var(--albumFont);
     font-weight: 300;
-    letter-spacing: 3rem;   
+    letter-spacing: 1rem;   
     text-indent: 2rem;
-    font-size: 4rem;
+    font-size: 8vw;
+    
 }
 @media (min-width: 768px) {
-    .album h2 {
-        font-size: 6rem;
+    .album h2, .main h2 {
+        letter-spacing: 3rem;  
+        font-size: 3vw;
     }  
     .album h3 {
-        font-size: 3rem;
+        font-size: 1.5vw;
     }  
 }
 .album img {
     display: block;
-    margin: 2rem auto;
+    margin: 0 auto;
     max-width: 100%;
 }
 @media (min-width: 768px) {
     .album-info p {
         max-width: 600px;
-        margin: 0 auto;
+        margin: 2rem auto 0 auto;
     }
 }
 div.album__tracklist {
@@ -411,7 +417,7 @@ h3.aquarius {
 .contact__form * {
     margin: 1rem;
 }
-label, textarea {
+label {
     color: var(--yellow);
     font-size: 2rem;
     letter-spacing: 1rem;
@@ -425,6 +431,39 @@ button.contact__send {
     margin: 0 auto; 
 }
 
+
+/********************band members********************/
+.member {
+    margin-bottom: 4rem;
+}
+.member__data {
+    width: 350px;
+    background-color: var(--darkGrey);
+    margin: 0 auto;
+    padding: 1rem .5rem;
+}
+.member h4, .member h3 .member img{
+    margin: 0;
+}
+.member h3 {
+    font-size: 90%;
+    letter-spacing: .5rem;
+}
+.member h4 {
+    font-weight: 400;
+}
+@media (min-width: 1200px) {
+     .member__grid {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+}
+@media (min-width: 1500px) {
+    .member__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /********************footer********************/
 
