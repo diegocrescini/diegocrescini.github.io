@@ -22,7 +22,7 @@ html {
 
 /********************General********************/
 .center-text {
-
+    text-align: center;
 }
 .container {
     display: block;

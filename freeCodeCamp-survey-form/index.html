@@ -11,31 +11,57 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <header class="container">
-        <img src="img/santander-logo.png" alt="Santander Logo">
-        <h1 id="title">Nos gustaría conocer tu opinión</h1>
+    <header class="container header">
+        <img src="https://theme.zdassets.com/theme_assets/9283468/a6dcf84ea9173b72260e46cb52d35e65f17a9dc6.png" alt="Santander Logo"> <!--img/santander-logo.png-->
+        <h1 class="center-text" id="title">Nos gustaría conocer tu opinión</h1>
         <p id="description">Queremos conocer cómo fue tu experiencia de visita a la sucursal 087 el miércoles 6 de enero.</p>
     </header>
+
     <main class="container">
-        <form id="survey-form" action=""></form>
+        <form id="survey-form" action="">
+            <label id="email-label" for="Email">Email</label>
+                <input type="email" name="" id="email" placeholder="email" required>
 
+            <label id="name-label" for="Name">Nombre</label>
+                <input id="name" type="text" placeholder="Nombre" required>
 
-        email
-        nombre
-        apellido
-        Tipo de documento (DNI LE Pasaporte otro)
-        Nº de documento
-        Sexo
-        Nacionalidad
-        Fecha de nacimiento
-        Domicilio 
-        Calle/Nº
-        Localidad
-        Provincia
-        País
-        Telefono
-        
+            <label for="Last Name">Apellido</label>
+                <input type="text" placeholder="Apellido" required>
 
+            <label for="Document">Tipo de Documento</label>
+                <select id="dropdown" name="document-type" id="document-type" required>
+                    <option value="dni">D.N.I.</option>
+                    <option value="le">L.E.</option>
+                    <option value="pasaporte">Pasaporte"</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+            <label id="number-label" for="document">Nº de documento</label>
+                <input id="number" type="number" id="number" min="999999" max="99999999" placeholder="Documento">
+
+            <label for="Phone">Teléfono</label>
+                <input type="number" placeholder="Teléfono">
+
+            <label for="sex">Sexo</label>
+                <input type="radio" id="masculino" value="masculino" name="sexo">
+                    <label for="masculino" name="sexo">Masculino</label>
+                <input type="radio" id="masculino" value="femenino" name="sexo">
+                    <label for="masculino" name="sexo">Femenino</label>
+
+            <h4>¿Qué tan probable es que recomiendes los beneficios y promociones de Santander a un familiar, amigo o colega?</h4>
+                <input type="checkbox" value="muy">
+                    <label for="pregunta1" value="muy">Muy probable</label>
+                <input type="checkbox" value="algo">
+                    <label for="pregunta1" value="algo">Algo probable</label>
+                <input type="checkbox" value="poco">
+                    <label for="pregunta1" value="poco">Poco probable</label>
+                <input type="checkbox" value="nada">
+                    <label for="pregunta1" value="nada">Nada probable</label>
+
+            <label for="opinion">Tu comentario nos ayuda a mejorar.</label>
+                <textarea name="opinion" id="opinión" cols="30" rows="10" placeholder="Tu comentario"></textarea>
+            <button id="submit" type="submit">Enviar</button>
+        </form>
 
     </main> 
 </body>
@@ -43,20 +69,19 @@
 
 
 
-
 <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
 <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
 <!-- User Story #3: I can see a form with id="survey-form". -->
-User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
-User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
-User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-User Story #7: Inside the form, I can enter a number in a field with id="number".
-User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
-User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
-User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
-User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
-User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
-User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+<!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+<!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
+<!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+<!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
+<!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+<!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+<!-- User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label". -->
+<!-- User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
+<!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+<!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+<!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+<!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+<!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
