@@ -10,17 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
     <title>Survey Form</title>
 </head>
-<body>
-    <header class="container header">
+<body class="container">
+    <header class="header">
         <img src="https://theme.zdassets.com/theme_assets/9283468/a6dcf84ea9173b72260e46cb52d35e65f17a9dc6.png" alt="Santander Logo"> <!--img/santander-logo.png-->
         <h1 class="center-text" id="title">Nos gustaría conocer tu opinión</h1>
         <p id="description">Queremos conocer cómo fue tu experiencia de visita a la sucursal 087 el miércoles 6 de enero.</p>
     </header>
 
-    <main class="container">
+    <main>
         <form id="survey-form" action="">
             <label id="email-label" for="Email">Email</label>
-                <input type="email" name="" id="email" placeholder="email" required>
+                <input type="email" name="" id="email" placeholder="Email" required>
 
             <label id="name-label" for="Name">Nombre</label>
                 <input id="name" type="text" placeholder="Nombre" required>
@@ -39,7 +39,7 @@
             <label id="number-label" for="document">Nº de documento</label>
                 <input id="number" type="number" id="number" min="999999" max="99999999" placeholder="Documento">
 
-            <label for="Phone">Teléfono</label>
+            <label id="phnoe" for="Phone">Teléfono</label>
                 <input type="number" placeholder="Teléfono">
 
             <label for="sex">Sexo</label>

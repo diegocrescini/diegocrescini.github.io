@@ -4,6 +4,7 @@
 :root {
     --white: #fff;
     --black: #000;
+    --grey: #ddd;
 }
 
 
@@ -26,17 +27,48 @@ html {
 }
 .container {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
     width: 95%;
 }
 @media (min-width: 768px) {
-    header, main {
-        width: 65%;
+    .container {
+        width: 50%;
     }
 }
+body {
+    border: 1px solid var(--grey);
+}
 /********************Header********************/
-
 .header img {
     width: 95%;
     max-width: 320px;
+    display: block;
+    margin: 0 auto;
+}
+
+/********************Text********************/
+h1, p, label, a, input, h2, textarea, select, h3, h4, button {
+    font-family: Helvetica, Arial, sans-serif
+}
+#title {
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+}
+main, header {
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    main, header {
+        padding: 1rem 5rem;
+    }
+}
+
+/********************Form********************/
+form {
+    display: flex;
+    flex-direction: column;
 }
