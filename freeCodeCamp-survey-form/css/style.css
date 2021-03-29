@@ -1,10 +1,9 @@
-/********************To Do********************/
-/* everything */
-
 :root {
     --white: #fff;
     --black: #000;
     --grey: #ddd;
+    --red: #ec0000;
+    --lightRed: #ec6161;
 }
 
 
@@ -32,8 +31,13 @@ html {
 }
 @media (min-width: 768px) {
     .container {
-        width: 50%;
+        width: 75%;
     }
+}
+@media (min-width: 1200px) {
+     .container {
+         width: 40%;
+     }
 }
 body {
     border: 1px solid var(--grey);
@@ -51,7 +55,7 @@ h1, p, label, a, input, h2, textarea, select, h3, h4, button {
     font-family: Helvetica, Arial, sans-serif
 }
 #title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 @media (min-width: 768px) {
     #title {
@@ -66,9 +70,42 @@ main, header {
         padding: 1rem 5rem;
     }
 }
+label.comentario, #description, h4 {
+    font-size: 1.1rem;
+}
 
 /********************Form********************/
 form {
     display: flex;
     flex-direction: column;
+}
+label, input, select, button, textarea {
+    padding: .5rem;
+}
+button {
+    margin-top: .5rem;
+}
+.probable, .sex {
+    margin: .3rem;
+    
+}
+button {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+.campo, {
+    margin-bottom: .5rem;
+    width: 100%;
+}
+.campo input, .campo select {
+    width: 100%;
+}
+textarea {
+    max-height: 10rem;
 }

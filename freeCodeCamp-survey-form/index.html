@@ -14,51 +14,72 @@
     <header class="header">
         <img src="https://theme.zdassets.com/theme_assets/9283468/a6dcf84ea9173b72260e46cb52d35e65f17a9dc6.png" alt="Santander Logo"> <!--img/santander-logo.png-->
         <h1 class="center-text" id="title">Nos gustaría conocer tu opinión</h1>
-        <p id="description">Queremos conocer cómo fue tu experiencia de visita a la sucursal 087 el miércoles 6 de enero.</p>
+        <p class="center-text" id="description">Queremos conocer cómo fue tu experiencia de visita a la sucursal 087 el miércoles 6 de enero.</p>
     </header>
 
     <main>
         <form id="survey-form" action="">
-            <label id="email-label" for="Email">Email</label>
+            <div class="campo">
+                <label id="email-label" for="Email">Email</label>
                 <input type="email" name="" id="email" placeholder="Email" required>
-
-            <label id="name-label" for="Name">Nombre</label>
+            </div>
+            <div class="campo">
+                <label id="name-label" for="Name">Nombre</label>
                 <input id="name" type="text" placeholder="Nombre" required>
-
-            <label for="Last Name">Apellido</label>
+            </div>
+            <div class="campo">
+                <label for="Last Name">Apellido</label>
                 <input type="text" placeholder="Apellido" required>
-
-            <label for="Document">Tipo de Documento</label>
+            </div>
+            <div class="campo">    
+                <label for="Document">Tipo de Documento</label>
                 <select id="dropdown" name="document-type" id="document-type" required>
                     <option value="dni">D.N.I.</option>
                     <option value="le">L.E.</option>
                     <option value="pasaporte">Pasaporte"</option>
                     <option value="otro">Otro</option>
                 </select>
-
-            <label id="number-label" for="document">Nº de documento</label>
+            </div>
+            <div class="campo">    
+                <label id="number-label" for="document">Nº de documento</label>
                 <input id="number" type="number" id="number" min="999999" max="99999999" placeholder="Documento">
-
-            <label id="phnoe" for="Phone">Teléfono</label>
+            </div>
+            <div class="campo">    
+                <label id="phnoe" for="Phone">Teléfono</label>
                 <input type="number" placeholder="Teléfono">
-
+            </div>
             <label for="sex">Sexo</label>
-                <input type="radio" id="masculino" value="masculino" name="sexo">
+                <div class="sex">
+                    <input type="checkbox" id="masculino" value="masculino" name="sexo">
                     <label for="masculino" name="sexo">Masculino</label>
-                <input type="radio" id="masculino" value="femenino" name="sexo">
+                </div>
+                <div class="sex">
+                    <input type="checkbox" id="femenino" value="femenino" name="sexo">
                     <label for="masculino" name="sexo">Femenino</label>
-
+                </div>
+                <div class="sex">
+                    <input type="checkbox" id="otro" value="otro" name="sexo">
+                    <label for="masculino" name="sexo">Otro</label>
+                </div>
             <h4>¿Qué tan probable es que recomiendes los beneficios y promociones de Santander a un familiar, amigo o colega?</h4>
-                <input type="checkbox" value="muy">
+                <div class="probable">
+                    <input name="pregunta1" type="radio" value="muy">
                     <label for="pregunta1" value="muy">Muy probable</label>
-                <input type="checkbox" value="algo">
+                </div>
+                <div class="probable">
+                    <input name="pregunta1" type="radio" value="algo">
                     <label for="pregunta1" value="algo">Algo probable</label>
-                <input type="checkbox" value="poco">
-                    <label for="pregunta1" value="poco">Poco probable</label>
-                <input type="checkbox" value="nada">
+                </div>    
+                <div class="probable">    
+                    <input name="pregunta1" type="radio" value="poco">
+                    <label for="pregunta1" value="poco">Poco probable   </label>
+                </div>    
+                <div class="probable">    
+                    <input name="pregunta1" type="radio" value="nada">
                     <label for="pregunta1" value="nada">Nada probable</label>
+                </div>
 
-            <label for="opinion">Tu comentario nos ayuda a mejorar.</label>
+            <label class="comentario" for="opinion"><h4>Tu comentario nos ayuda a mejorar.</h4></label>
                 <textarea name="opinion" id="opinión" cols="30" rows="10" placeholder="Tu comentario"></textarea>
             <button id="submit" type="submit">Enviar</button>
         </form>
