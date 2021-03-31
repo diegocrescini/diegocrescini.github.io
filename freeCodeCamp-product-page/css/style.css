@@ -1,0 +1,48 @@
+:root {
+    --red: #cc2128;
+    --blue: #00909e;
+    --lightGrey: #9a9a9a;
+    --darkGrey: #464646;
+}
+
+
+/********************Config********************/
+html {
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/********************General********************/
+.center-text {
+    text-align: center;
+}
+.container {
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 95%;
+}
+.hidden {
+    display: none;
+}
+/********************Header********************/
+.header__div {
+    background-color: #00909e;
+    width: 100%;
+    padding: 1rem; 
+}
+#header-img {
+    display: block;
+    margin: 0 auto;    
+}
+
+/********************Nav-bar********************/
+.nav-bar {
+    display: flex;
+    
+}
