@@ -10,38 +10,50 @@
     <title>Makita</title>
 </head>
 <body>
+    
     <header id="header">
-        <div class="header__div">
-            <img id="header-img" src="https://www.makita.com.ar/pics/logo.png" alt="Makita Logo">
-        </div>
-        <nav id="nav-bar"></nav>
-            <ul>
-                <li class="nav-link"><a href="#especificaciones">Especificaciones</a></li>
-                <li class="nav-link"><a href="#características">Características</a></li>
-                <li class="nav-link"><a href="#aplicaciones">Aplicaciones</a></li>
-            </ul>
-        </nav>
+            <a href="index.html"><img id="header-img" src="https://www.makita.com.ar/pics/logo.png" alt="Makita Logo"></a>
+            <nav id="nav-bar"></nav>
+                <ul class="uppercase-bold">
+                    <li class="nav-link"><a href="#especificaciones">Especificaciones</a></li>
+                    <li class="nav-link"><a href="#caracteristicas">Características</a></li>
+                    <li class="nav-link"><a href="#aplicaciones">Aplicaciones</a></li>
+                </ul>
+            </nav>
     </header>
     
     <main>
         
-        <div class="img">
-            <img src="https://www.makita.com.ar/uploads/products/1561406200-15962.jpg" alt="Taladro Atornillador Makita Inalámbrico">
+        <div class="img"></div>
+            <img class="product-img" src="https://www.makita.com.ar/uploads/products/1561406200-15962.jpg" alt="Taladro Atornillador Makita Inalámbrico">
         </div>
         
-        <div class="info">
-            <h4 class="info__model">DDF453Z</h4>
-            <h2>Taladro Atornillador Makita 18V 42/27 N·m</h2>
-            <p>El taladro atornillador inalámbrico Makita DDF453Z es una máquina ligera, de alto poder y resistente con engranajes metálicos para una perfecta transmisión de la fuerza y mayor durabilidad. Cuenta con 16 posiciones de par de apriete + 1 directa y la empuñadura ergonómicamente diseñada provee mayor control y confort. No incluye batería ni cargador.</p>
+        <div class="info container">
+            <h4 class=" uppercase-bold info__model">DDF453Z</h4>
+            <h2 class="info__product">Taladro Atornillador Makita 18V 42/27 N·m</h2>
+            <p class="info__text">El taladro atornillador inalámbrico Makita DDF453Z es una máquina ligera, de alto poder y resistente con engranajes metálicos para una perfecta transmisión de la fuerza y mayor durabilidad. Cuenta con 16 posiciones de par de apriete + 1 directa y la empuñadura ergonómicamente diseñada provee mayor control y confort. No incluye batería ni cargador.</p>
         </div>
         
-        <div>
-            <a href="#">Dónde comprar</a>
+        <div class="button container">
+            <a class="uppercase-bold" href="#">Dónde comprar</a>
         </div>
         
-        <div>
+        <!--<div>
             <h3>Tecnologías</h3>
             <img src="https://www.makita.com.ar/uploads/filemanager/Tecnologias/lxt.png" alt="Tecnología LXT">
+        </div>-->
+
+        <div id="especificaciones">
+            <h2>Especificaciones</h2>
+        </div>
+
+        <div id="caracteristicas">
+            <h2>Características</h2>
+        </div>
+
+        <div id="cotacto">
+            <h2>Contacto</h2>
+            <form id="form" action=""></form>
         </div>
 
     </main>
@@ -59,8 +71,8 @@
 <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
 <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
 <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-User Story #6: I can watch an embedded product video with id="video".
+<!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+<!-- User Story #6: I can watch an embedded product video with id="video".
 User Story #7: My landing page has a form element with a corresponding id="form".
 User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
 User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
@@ -69,4 +81,4 @@ User Story #11: Within the form, there is a submit input with a corresponding id
 User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
 User Story #13: The navbar should always be at the top of the viewport.
 User Story #14: My product landing page should have at least one media query.
-User Story #15: My product landing page should utilize CSS flexbox at least once.
+User Story #15: My product landing page should utilize CSS flexbox at least once. -->
