@@ -1,7 +1,7 @@
 :root {
     --red: #cc2128;
     --blue: #00909e;
-    --lightGrey: #9a9a9a;
+    --lightGrey: #e2e2e2;
     --darkGrey: #464646;
     --white: #fff;
 }
@@ -30,7 +30,7 @@ html {
 a, li {
     text-decoration: none;
 }
-h1, h2, h3, h4, a, li, p {
+h1, h2, h3, h4, a, li, p, input, label {
     font-family: Helvetica, Arial, sans-serif;
 }
 .uppercase-bold {
@@ -72,28 +72,54 @@ li:hover {
 }
 /********************Main********************/
 main {
-    position: absolute;
+    position: relative;
     top: 8rem;
-    
 }
 img.product-img {
     max-width: 100%;
     margin: 2rem auto;
 }
+#características div {
+    display: grid;
+    grid-template-columns: 2 1fr;
+    gap: 1rem;
+}
+i {
+    color: var(--blue);
+    font-size: 3rem;
+}
 /********************Text********************/
 .info h4 {
     color: var(--darkGrey);
     font-size: 1.3rem;
+    font-weight: 400;
 }
 .info h2 {
     font-size: 1.6rem;
+    color: var(--blue);
 }
 .info p {
     font-size: .9rem;
     line-height: 1.2rem;
 }
 .info h2, .info h4 , .info p{
-    margin: .5rem 0;
+    margin: .7rem 0;
+}
+h2 {
+    margin: 1rem 0; 
+    color: var(--blue);
+}
+#especificaciones h4 {
+    margin: .1rem 0;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    border: 1px solid var(--darkGrey);
+}
+#especificaciones h4 span {
+    font-weight: 400;
+}
+.especificaciones-grey {
+    background-color: var(--lightGrey);
 }
 /********************Info********************/
 .container {
@@ -108,6 +134,18 @@ img.product-img {
     padding: .8rem;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px var(--lightGrey);
+}
+@media (min-width: 768px) {
+    .button {
+        display: block;
+        max-width: 300px;   
+        margin: 0 auto;
+        text-align: center;
+        background-color: var(--blue);
+        padding: .8rem;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px var(--lightGrey);
+    }    
 }
 .button a {
     color: var(--white);

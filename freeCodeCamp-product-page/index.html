@@ -17,43 +17,81 @@
                 <ul class="uppercase-bold">
                     <li class="nav-link"><a href="#especificaciones">Especificaciones</a></li>
                     <li class="nav-link"><a href="#caracteristicas">Características</a></li>
-                    <li class="nav-link"><a href="#aplicaciones">Aplicaciones</a></li>
+                    <li class="nav-link"><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
     </header>
     
     <main>
-        
-        <div class="img"></div>
-            <img class="product-img" src="https://www.makita.com.ar/uploads/products/1561406200-15962.jpg" alt="Taladro Atornillador Makita Inalámbrico">
-        </div>
-        
-        <div class="info container">
-            <h4 class=" uppercase-bold info__model">DDF453Z</h4>
-            <h2 class="info__product">Taladro Atornillador Makita 18V 42/27 N·m</h2>
-            <p class="info__text">El taladro atornillador inalámbrico Makita DDF453Z es una máquina ligera, de alto poder y resistente con engranajes metálicos para una perfecta transmisión de la fuerza y mayor durabilidad. Cuenta con 16 posiciones de par de apriete + 1 directa y la empuñadura ergonómicamente diseñada provee mayor control y confort. No incluye batería ni cargador.</p>
-        </div>
-        
-        <div class="button container">
-            <a class="uppercase-bold" href="#">Dónde comprar</a>
+        <div class="product">
+            <div class="img">
+                <img class="product-img" src="https://www.makita.com.ar/uploads/products/1561406200-15962.jpg" alt="Taladro Atornillador Makita Inalámbrico">
+            </div>
+            
+            <div class="info container">
+                <h4 class=" uppercase-bold info__model">DDF453Z</h4>
+                <h2 class="info__product">Taladro Atornillador Makita 18V 42/27 N·m</h2>
+                <p class="info__text">El taladro atornillador inalámbrico Makita DDF453Z es una máquina ligera, de alto poder y resistente con engranajes metálicos para una perfecta transmisión de la fuerza y mayor durabilidad. Cuenta con 16 posiciones de par de apriete + 1 directa y la empuñadura ergonómicamente diseñada provee mayor control y confort. No incluye batería ni cargador.</p>
+            </div>
+            
+            <div class="button container">
+                <a class="uppercase-bold" href="#">Dónde comprar</a>
+            </div>
         </div>
         
         <!--<div>
             <h3>Tecnologías</h3>
             <img src="https://www.makita.com.ar/uploads/filemanager/Tecnologias/lxt.png" alt="Tecnología LXT">
         </div>-->
-
-        <div id="especificaciones">
+        </div>
+        
+        <div id="especificaciones" class="container">
             <h2>Especificaciones</h2>
+            <h4 class="especificaciones-grey">Torque: <span>42/27 N·m</span></h4>
+            <h4>Capacidad: <span>13/36</span></h4>
+            <h4 class="especificaciones-grey">RPM: <span>0-1300</span></h4>
+            <h4>Peso: <span>2 kg</span></h4>
+            <h4 class="especificaciones-grey">Tamaño: <span>222x79x244 mm</span></h4>
         </div>
 
-        <div id="caracteristicas">
+        <div id="caracteristicas" class="container">
             <h2>Características</h2>
+            <div>
+                <i class="fas fa-tachometer-alt"></i>
+                <h4>Velocidad Variable</h4>
+            </div>    
+            <div>
+                <i class="fas fa-hand-paper"></i>
+                <h4>Freno Eléctrico</h4>
+            </div>
+            <div>
+                <i class="fas fa-undo"></i>
+                <h4>Reversible</h4>
+            </div>
+            <div>
+                <i class="fas fa-cog"></i>
+                <h4>2 Velocidades mecánicas</h4>
+            </div>
+            <div>
+                <i class="fas fa-lock"></i>
+                <h4>Broquero de Cierre Rápido</h4>
+            </div>
+            <div>
+                <i class="fas fa-adjust"></i>
+                <h4>16 Ajustes de Torque</h4>
+            </div>
+            <!--<video id="#video" src=""></video> Just for excercise purposes. No use, since the video is embeded in iframe below.-->
+            <iframe id="#video" width="400" height="275" src="https://www.youtube.com/embed/Ui99zIGwAW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <div id="cotacto">
+        <div id="contacto" class="container">
             <h2>Contacto</h2>
-            <form id="form" action=""></form>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h4>Déjanos tu email para recibir más información sobre nuestros productos</h4>
+                <label for="email">Email: </label>
+                <input id="rmail" type="email" placeholder="example@mail.com">
+                <input id="submit" class="" type="submit">
+            </form>
         </div>
 
     </main>
@@ -64,7 +102,8 @@
             <li class="nav-link"><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li class="nav-link"><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>
-    </instagram</body>
+    </footer>
+</body>
 </html>
 
 <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
@@ -72,13 +111,13 @@
 <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
 <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
 <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
-<!-- User Story #6: I can watch an embedded product video with id="video".
-User Story #7: My landing page has a form element with a corresponding id="form".
-User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
-User Story #13: The navbar should always be at the top of the viewport.
-User Story #14: My product landing page should have at least one media query.
-User Story #15: My product landing page should utilize CSS flexbox at least once. -->
+<!-- User Story #6: I can watch an embedded product video with id="video". -->
+<!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
+<!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+<!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
+<!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+<!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
+<!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+<!-- User Story #13: The navbar should always be at the top of the viewport. -->
+<!-- User Story #14: My product landing page should have at least one media query. -->
+<!-- User Story #15: My product landing page should utilize CSS flexbox at least once. -->
