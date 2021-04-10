@@ -6,7 +6,6 @@
     --white: #fff;
 }
 
-
 /********************Config********************/
 html {
     box-sizing: border-box;
@@ -22,13 +21,12 @@ html {
 .center-text {
     text-align: center;
 }
-/*.container {
-    display: block;
-    margin: 2rem auto 0 auto;
-    width: 95%;
-}*/
+
 a, li {
     text-decoration: none;
+}
+ul {
+    list-style: none;
 }
 h1, h2, h3, h4, a, li, p, input, label {
     font-family: Helvetica, Arial, sans-serif;
@@ -36,6 +34,10 @@ h1, h2, h3, h4, a, li, p, input, label {
 .uppercase-bold {
     text-transform: uppercase;
     font-weight: 700;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 /********************Header********************/
 #header {
@@ -53,7 +55,6 @@ ul {
     display:flex;
     flex-wrap: nowrap;
     justify-content: space-around;
- 
 }
 .nav-link {
     list-style: none;
@@ -64,35 +65,26 @@ ul {
     padding: .5rem;
 }
 li {
-    font-size: .9rem;;
+    font-size: .8rem;;
     padding: .5rem;
 }
 li:hover {
     border-bottom: 4px solid var(--red);
 }
 /********************Main********************/
-main {
+main, footer {
     position: relative;
     top: 8rem;
+}
+main {
+    margin-bottom: 2rem;
 }
 img.product-img {
     max-width: 100%;
     margin: 2rem auto;
 }
-#caracteristicas {
-    margin-top: 2rem;
-}
-.caracteristicas-iconos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-/*FINISH THE ICONS DIV TO CENTER WITH GRID*/    
-}
-i {
-    color: var(--blue);
-    font-size: 3rem;
-}
-/********************Text********************/
+
+/********************Main info********************/
 .info h4 {
     color: var(--darkGrey);
     font-size: 1.3rem;
@@ -113,6 +105,8 @@ h2 {
     margin: 1rem 0; 
     color: var(--blue);
 }
+
+/********************Especificaciones********************/
 #especificaciones h4 {
     margin: .1rem 0;
     padding: .5rem 1rem;
@@ -125,11 +119,26 @@ h2 {
 .especificaciones-grey {
     background-color: var(--lightGrey);
 }
-/********************Info********************/
-.container {
-    width: 90%;
-    margin: 0 auto;
+
+
+/********************Caracteristicas********************/
+#caracteristicas {
+    margin-top: 2rem;
 }
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.caracteristicas-iconos {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+i {
+    color: var(--blue);
+    font-size: 3rem;
+}
+
 /********************Boton********************/
 .button {
     display: flex;
@@ -140,7 +149,7 @@ h2 {
     box-shadow: 1px 1px 1px 1px var(--lightGrey);
 }
 @media (min-width: 768px) {
-    .button {
+    .button input.button {
         display: block;
         max-width: 300px;   
         margin: 0 auto;
@@ -151,6 +160,33 @@ h2 {
         box-shadow: 1px 1px 1px 1px var(--lightGrey);
     }    
 }
-.button a {
+.button a, input.button {
     color: var(--white);
+}
+
+/********************Contacto********************/
+#contacto {
+    display: flex;
+    flex-direction: column;
+}
+#contacto * {
+    width: 100%;
+}
+input.button {
+    border-style: none;
+}
+#contacto form *{
+    margin-top: .5rem;
+}
+#email {
+    height: 2.3rem;
+} 
+/********************Footer********************/
+footer {
+    background-color: var(--lightGrey);
+    padding: .6rem;
+}
+.social-link a { 
+    color: var(--white);
+    padding: .5rem;   
 }
