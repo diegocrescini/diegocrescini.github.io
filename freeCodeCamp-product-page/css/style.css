@@ -9,7 +9,6 @@
 /********************Config********************/
 html {
     box-sizing: border-box;
-    
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -39,6 +38,11 @@ h1, h2, h3, h4, a, li, p, input, label {
     width: 90%;
     margin: 0 auto;
 }
+@media (min-width: 768px) {
+     .container {
+         width: 65%;
+     }
+}
 /********************Header********************/
 #header {
     background-color: #00909e;
@@ -67,6 +71,12 @@ ul {
 li {
     font-size: .8rem;;
     padding: .5rem;
+    border-bottom: 4px solid var(--blue);
+}
+@media (min-width: 768px) {
+     li {
+         font-size: 1rem;
+     }
 }
 li:hover {
     border-bottom: 4px solid var(--red);
@@ -84,7 +94,27 @@ img.product-img {
     margin: 2rem auto;
 }
 
-/********************Main info********************/
+/********************Layout Media Query********************/
+@media (min-width: 768px) {
+    .product {
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+         align-items: flex-end;
+         
+    }
+    .info-box {
+        margin: 4rem 0;
+        
+    }
+    #especificaciones, #caracteristicas, #contacto {
+        width: 500px;
+    }
+    #especificaciones h2, #caracteristicas h2, #contacto h2, #contacto h4, input {
+        text-align: center;
+    }
+}
+
+
 .info h4 {
     color: var(--darkGrey);
     font-size: 1.3rem;
@@ -158,6 +188,7 @@ i {
         padding: .8rem;
         border-radius: 5px;
         box-shadow: 1px 1px 1px 1px var(--lightGrey);
+        
     }    
 }
 .button a, input.button {
