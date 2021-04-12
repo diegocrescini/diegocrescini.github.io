@@ -10,14 +10,14 @@
     <title>Makita</title>
 </head>
 <body>
-    
+
     <header id="header">
             <a href="index.html"><img id="header-img" src="https://www.makita.com.ar/pics/logo.png" alt="Makita Logo"></a>
-            <nav id="nav-bar"></nav>
+            <nav id="nav-bar">
                 <ul class="uppercase-bold">
-                    <li class="nav-link"><a href="#especificaciones">Especificaciones</a></li>
-                    <li class="nav-link"><a href="#caracteristicas">Características</a></li>
-                    <li class="nav-link"><a href="#contacto">Contacto</a></li>
+                    <li><a class="nav-link" href="#especificaciones">Especificaciones</a></li> 
+                    <li><a class="nav-link" href="#caracteristicas">Características</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>  <!--CHANGE CLASS PROPERTY TO <li> for CSS to work properly.-->
                 </ul>
             </nav>
     </header>
@@ -85,7 +85,9 @@
                 </div>
             </div>
             <!--<video id="#video" src=""></video> Just for excercise purposes. No use, since the video is embeded in iframe below.-->
-            <iframe id="#video" width="400" height="275" src="https://www.youtube.com/embed/Ui99zIGwAW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video container">
+                <iframe id="video" src="https://www.youtube.com/embed/Ui99zIGwAW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div id="contacto" class="container">
@@ -93,8 +95,8 @@
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <h4>Déjanos tu email para recibir más información sobre nuestros productos:</h4>
                 <!-- <label for="email">Email: </label> -->
-                <input id="email" type="email" placeholder="example@mail.com">
-                <input id="submit" class="button uppercase-bold" type="submit" value="Enviar">
+                <input id="email" type="email" name="email" placeholder="example@mail.com">
+                <input id="submit" class="button uppercase-bold" type="submit" name="email" value="Enviar">
             </form>
         </div>
 
