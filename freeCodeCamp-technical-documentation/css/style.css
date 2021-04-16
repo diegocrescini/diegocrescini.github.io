@@ -1,3 +1,84 @@
 :root {
     --black: #000;
+    --lightGrey: #888;
+    --darkGrey: #333;
+    --white: #fff;
+    --slab: 'Zilla Slab Highlight', cursive;
 }
+/********************Config********************/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/********************General********************/
+.center-text {
+    text-align: center;
+}
+
+/********************Type and text********************/
+h1, li, a, h2, h3, p {
+    color: var(--black);
+}
+h1, h2, h3, h3 a {
+    color: var(--darkGrey);
+    font-family: var(--slab);
+    margin: 1.2rem 0;
+}
+li, p, code {
+    font-family: Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+}
+li {
+    list-style-type: none;
+    margin: 2rem auto;
+}
+li a:hover {
+    border-bottom: dotted 2px var(--lightGrey);
+}
+p {
+    line-height: 1.2rem;
+    margin: .5rem 0;
+}
+h1 {
+    font-size: 3.3rem;
+}
+h2 {
+    font-size: 2.3rem;
+}
+h3 {
+    font-size: 1.4rem;
+}
+
+/********************Layout********************/
+body {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+#navbar {
+    
+}
+
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+        margin: 2rem 6rem;
+    }
+    #navbar {
+        flex: 2 1 auto;
+        padding: 0 3rem; 
+    }
+    #main-doc {
+        margin: 0 15rem 0 8rem;
+    }   
+}
+
