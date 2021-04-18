@@ -1,0 +1,23 @@
+:root {
+    --black: #000;
+    --lightGrey: #888;
+    --darkGrey: #333;
+    --white: #fff;
+    --cyan: #0ff;
+    --slab: 'Zilla Slab Highlight', cursive;
+}
+/********************Config********************/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/********************General********************/
+
+
+
+/********************Type and text********************/
